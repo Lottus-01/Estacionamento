@@ -34,8 +34,6 @@ while (TempoP > 720)
 }
 Horas = TempoP / 60;
 
-
-
 Console.WriteLine("Serviço de valet (S/N).......:");
 valet = (Console.ReadLine());
 while (valet != "S" && valet !="N")
@@ -61,10 +59,16 @@ if (TamanhoV == "P")
     HorasP = Horas * 10;
     DiariaP = Horas * 50;
     LavagemP = 50;
+    
+
+    total = HorasP + DiariaP + LavagemP;
 }
 else if (TamanhoV == "G") ;
 {
     HorasG = Horas * 20;
     DiariaG = Horas * 80;
     LavagemG = 100;
+
+    total = HorasG + DiariaG + LavagemG;
+
 }
